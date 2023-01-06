@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix Converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+</head>
+
+<body onload="load()">
+    <div id="loading"></div>
+    <div id="particles-js">
+        <div id="pos">
+            <header id="header">
+                <h1> infix Expression -> Prefix/Postfix</h1>
+            </header>
+            <div id="infix">
+                <span>Enter an Infix Expression :</span>
+                <br><small id="sm">Don't use brackets*</small><br>
+                <input type="text" id="input" class="infi">
+                <br><br>
+                <span>Covert To</span>
+                <br>
+            </div>
+            <div id="choose">
+                <span id="pre" onclick="pre()" on>Prefix Expression</span>
+                <span id="post" onclick="post()">Postfix Expression</span>
+            </div><br><br>
+            <div id="result">
+                <span id="out"> </span> <br><br><span id="output">No Input!</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/ayush-agarwal52" target="_blank"><img src="img/linkedinIcon.png"
+                alt="linkedin" style="border-radius: 5px;" class="icon"></a>
+        <a href="https://github.com/agarwalayush9" target="_blank"><img src="img/GitHub-Mark-Light-64px.png"
+                alt="Github" id="git" class="icon" style="margin-left: 30px;"></a><br>
+        <a class="a" href="#">Created By Ayush Agarwal | &copy; 2023 </a>
+    </footer>
+    <!-- Script .. -->
+    <script>
+        let body = document.body;
+        body.style.overflow = 'hidden';
+        var loaded = document.getElementById('loading');
+        function load() {
+            loaded.style.display = 'none';
+            body.style.overflow = 'visible';
+        }
+    </script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+    <!--   -->
+</body>
+
+</html>
